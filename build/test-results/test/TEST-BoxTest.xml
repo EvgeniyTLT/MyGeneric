@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BoxTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-04T12:10:55" hostname="DESKTOP-0LTQCQR" time="0.004">
+<testsuite name="BoxTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-04T12:14:30" hostname="DESKTOP-0LTQCQR" time="0.005">
   <properties/>
-  <testcase name="testBox" classname="BoxTest" time="0.004">
-    <failure message="java.lang.AssertionError: expected:&lt;20&gt; but was:&lt;30&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;20&gt; but was:&lt;30&gt;
+  <testcase name="testBox" classname="BoxTest" time="0.005">
+    <failure message="java.lang.AssertionError: expected:&lt;30&gt; but was:&lt;10&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;30&gt; but was:&lt;10&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at BoxTest.testBox(BoxTest.java:13)
+	at BoxTest.testBox(BoxTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
