@@ -1,15 +1,25 @@
-public class Box {
-    private Object object;
+public class Box <K, V> {
+    private K key;
+    private V value;
 
-    public Box(Object object) {
-        this.object = object;
+    public K getKey() {
+        return key;
     }
 
-    public Object getObject() {
-        return object;
+    public void setKey(K key) {
+        this.key = key;
     }
 
-    public void setObject(Object object) {
-        this.object = object;
+    public V getValue() {
+        return value;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
+    }
+
+    public Box(K key, V value) {
+        this.key = key;
+        this.value = value;
     }
 }
