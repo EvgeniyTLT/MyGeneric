@@ -1,12 +1,12 @@
-public class Box <K, V, U> {
+public class Box<K, V, T> {
     private K key;
     private V value;
-    private U uValue;
+    private T value2;
 
-    public Box(K key, V value, U uValue) {
+    public Box(K key, V value, T value2) {
         this.key = key;
         this.value = value;
-        this.uValue = uValue;
+        this.value2 = value2;
     }
 
     public K getKey() {
@@ -25,11 +25,11 @@ public class Box <K, V, U> {
         this.value = value;
     }
 
-    public U getuValue() {
-        return uValue;
+    public T getValue2() {
+        return value2;
     }
 
-    public void setuValue(U uValue) {
-        this.uValue = uValue;
+    public void setValue2(T value2) {
+        this.value2 = value2;
     }
 }
