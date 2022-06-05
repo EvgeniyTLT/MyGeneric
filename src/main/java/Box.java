@@ -1,35 +1,26 @@
-public class Box<K, V, T> {
-    private K key;
-    private V value;
-    private T value2;
+public class Box<T> {
 
-    public Box(K key, V value, T value2) {
-        this.key = key;
-        this.value = value;
-        this.value2 = value2;
+    private T[] array;
+
+    public Box(T... array) {
+        this.array = array;
     }
 
-    public K getKey() {
-        return key;
+    public T[] getArray() {
+        return array;
     }
 
-    public void setKey(K key) {
-        this.key = key;
+    public double avr() {
+        double result = 0;
+        for (T element: array) {
+            result += ((Number) element).doubleValue();
+        }
+        return result / (double) array.length;
     }
 
-    public V getValue() {
-        return value;
+    public void setArray(T[] array) {
+        this.array = array;
     }
 
-    public void setValue(V value) {
-        this.value = value;
-    }
 
-    public T getValue2() {
-        return value2;
-    }
-
-    public void setValue2(T value2) {
-        this.value2 = value2;
-    }
 }
