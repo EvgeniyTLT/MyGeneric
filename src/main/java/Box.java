@@ -34,6 +34,11 @@ public class Box<T extends Number & Comparable<T> & Serializable> {
         return list.get(0);
     }
 
+    public static <U> void transfer(List<U> src, List<U> dst) {
+        dst.addAll(src);
+        src.clear();
+    }
+
     public int compare(Box<?> anothers) {
         if (avr() > anothers.avr()) {
             return 1;
