@@ -30,6 +30,10 @@ public class Box<T extends Number & Comparable<T> & Serializable> {
 
     }
 
+    public static <U> U getFirstElement(List<U> list) {
+        return list.get(0);
+    }
+
     public int compare(Box<?> anothers) {
         if (avr() > anothers.avr()) {
             return 1;
