@@ -26,5 +26,6 @@ public class BoxTest {
         assertEquals(0, list.size());
         assertEquals(10, list2.size());
 
+
     }
 }
