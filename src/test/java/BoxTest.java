@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class BoxTest {
 
 
@@ -9,6 +7,7 @@ public class BoxTest {
     public void testBox() {
 
         Box<Integer> box = new Box(5, 10, 15);
-        assertEquals(10, box.avr(), 0.001);
+        Box<Float> box2 = new Box(5, 10, 15);
+
     }
 }
