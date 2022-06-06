@@ -1,4 +1,5 @@
 import java.io.Serializable;
+import java.util.List;
 
 public class Box<T extends Number & Comparable<T> & Serializable> {
 
@@ -21,7 +22,15 @@ public class Box<T extends Number & Comparable<T> & Serializable> {
         return result / (double) array.length;
     }
 
-    public int compare(Box<T> anothers) {
+//    public static void method(List<Number> numbers) {
+//
+//    }
+
+    public static void method(List<? extends Number> numbers) {
+
+    }
+
+    public int compare(Box<?> anothers) {
         if (avr() > anothers.avr()) {
             return 1;
         } else if (avr() == anothers.avr()) {
